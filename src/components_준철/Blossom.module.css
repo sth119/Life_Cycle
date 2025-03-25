@@ -1,0 +1,16 @@
+.tree {
+    display: flex;
+    height: 450px;
+    position: absolute;
+    bottom: 100%;
+    left: -10%;
+    z-index: 1;
+
+    animation: tree 1.5s linear forwards;
+    animation-delay: 24s;
+}
+
+@keyframes tree {
+    0%      { left: -10%; bottom: 100%; }
+    100%    { left: -10%; bottom: 7%; }
+}

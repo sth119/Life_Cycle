@@ -1,0 +1,24 @@
+.image {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+
+    animation-name: bottle;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    z-index: 990;
+}
+
+.image1 {
+    width: 80px;
+}
+  
+@keyframes bottle {
+    0%   { top: 0%; right:50px; opacity: 0; rotate: 0deg;}
+    15%     {opacity: 1;}
+    50%   { top: 90%; opacity: 1;}
+    53%   {top: 90%; opacity: 1; rotate: 580deg;}
+    100% { top: 90%; right: 50px; opacity: 1; rotate: 580deg;}
+}

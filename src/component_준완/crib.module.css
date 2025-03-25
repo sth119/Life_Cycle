@@ -1,0 +1,25 @@
+.image {
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 260px;
+
+    animation-name: crib;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    z-index: 500;
+}
+
+.image1 {
+    width: 300px;
+}
+  
+@keyframes crib {
+    0%   { top: 0%; opacity: 0;}
+    30%   { top: 0%; opacity: 0;}
+    33%   {opacity: 1;}
+    35%  { top: 60%;}
+    100% { top: 60%;}
+}

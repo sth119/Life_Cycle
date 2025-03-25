@@ -1,0 +1,21 @@
+.bench{
+  height: 100px;
+
+  z-index: 2;
+}
+
+.bench_position{
+  height: fit-content;
+  display: flex;
+  position: absolute;
+
+  top: -100px;
+
+  animation: moveDown 0.8s linear forwards;
+  animation-delay: 42s;
+}
+
+@keyframes moveDown {
+0% { top: -100px; left: 150px; }
+100% { top: 80%; left: 150px; }
+}

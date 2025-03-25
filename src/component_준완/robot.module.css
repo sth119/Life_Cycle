@@ -1,0 +1,23 @@
+.image {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  right: 200px;
+
+  animation-name: robot;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.image1 {
+  width: 100px;
+}
+  
+@keyframes robot {
+  0%   { top: 0%; opacity: 0; rotate: 0deg;}
+  10%   { top: 0%; opacity: 0;}
+  13%   {opacity: 1;}
+  50%  { top: 80%; rotate: 500deg;}
+  100% { top: 80%;}
+}

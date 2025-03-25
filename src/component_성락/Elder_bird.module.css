@@ -1,0 +1,55 @@
+.bird1{
+  width: 90px;
+  display: flex;
+  position: absolute;
+
+  top: 320px;
+  left: 130px;
+
+  transform: scaleX(-1);
+}
+
+.bird2{
+  width: 90px;
+  height: fit-content;
+  display: flex;
+  position: absolute;
+
+  top: 490px;
+  left: 150px;
+
+  transform: scaleX(-1);
+}
+
+.bird3{
+  width: 80px;
+  height: fit-content;
+  display: flex;
+  position: absolute;
+
+  left: 12px;
+  top: 390px;
+
+}
+
+.bird4{
+  width: 150px;
+  height: fit-content;
+  display: flex;
+  position: absolute;
+
+  right: -140px;
+  top: 100px;
+
+  opacity: 0;
+
+  animation: moveDown 3s linear forwards;
+  animation-delay: 50s;
+}
+
+
+@keyframes moveDown {
+0% { top: 100px; right: -140px; opacity: 0;}
+15% {opacity: 1;}
+100% { top: 100px; right: 720px; opacity: 1;}
+}

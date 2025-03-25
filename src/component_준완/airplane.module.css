@@ -1,0 +1,26 @@
+.image {
+    display: flex;
+    position: absolute;
+    top: -300px;
+    right: 5%;
+
+    animation-name: plane;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.image1 {
+    width: 150px;
+}
+  
+@keyframes plane {
+    0%   { right: -10%; top: 10%; opacity: 0;}
+    20%  { top: 5% }
+    30%  { top: 10% }
+    40%  { opacity: 1; }
+    50%  { top: 30%; }
+    70%  { top: 20%; }
+    85%  { top: 30%; }
+    100% { right: 130%; top: 20%;}
+}

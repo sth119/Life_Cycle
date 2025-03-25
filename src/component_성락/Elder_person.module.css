@@ -1,0 +1,49 @@
+.img {
+    width: 150px;
+}
+
+.img_bird {
+    width: 50px;
+
+    transform: scaleX(-1);
+}
+
+.person {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    
+    animation: moveRight 5s linear forwards;
+    
+    animation-delay: 40s;
+
+    z-index: 9999;
+}
+
+@keyframes moveRight {
+  0% { bottom: 60px; left: -150px; opacity: 0;}
+  20% {opacity: 1;}
+  100% { bottom: 60px; left: 480px; }
+}
+
+.bird {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  
+  animation: moveRight_bird 10s linear forwards;
+
+  animation-delay: 40s;
+
+  z-index: 9999;
+}
+
+@keyframes moveRight_bird {
+  0% { bottom: 60px; left: -150px; opacity: 0;}
+  20% {opacity: 1;}
+  50% { bottom: 60px; left: 480px; }
+  60% { bottom: 60px; left: 580px; transform: scaleX(1);}
+  80% { bottom: 60px; left: 580px; transform: scaleX(-1);}
+  100% { bottom: 60px; left: 780px; }
+}

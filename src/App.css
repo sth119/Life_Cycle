@@ -1,0 +1,32 @@
+/* *{
+  outline: 1px solid rgba(255, 0, 0, 0.5) !important;
+} */
+
+.background {
+  width: 400vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url(./component_성락/img/lifecycle_back.png);
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-between;
+
+  animation: back 40s ease-in-out forwards;
+
+}
+
+@keyframes back {
+  0%      { transform: translateX(0%); }
+  15%      { transform: translateX(0%); }
+
+  25%      { transform: translateX(-23%); }
+  44%      { transform: translateX(-26%); }
+
+  58%      { transform: translateX(-51%); }
+  78%      { transform: translateX(-55%); }
+  
+  100%    { transform: translateX(-75%); }
+}

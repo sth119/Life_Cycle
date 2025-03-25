@@ -1,0 +1,15 @@
+.image {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  z-index: 999;
+}
+
+.image1 {
+  width: 200px;
+}
+

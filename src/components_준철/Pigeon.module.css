@@ -1,0 +1,70 @@
+.bird_stable1 {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    bottom: 700px;
+    opacity: 0;
+    z-index: 1;
+    transform: scaleX(-1);
+
+    animation: stable 5s linear forwards;
+    animation-delay: 25s;
+}
+
+.bird_flying1 {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transform: scaleX(-1);
+    
+    animation: flying1 5s ease-out forwards;
+    animation-delay: 25s;
+}
+
+@keyframes flying1 {
+    0%      { opacity: 0; left: 0%; bottom: 200%; }
+    1%      { opacity: 1; }
+    99%     { opacity: 1; }
+    100%    { opacity: 0; left: 40%; bottom: 700px; }
+}
+
+.bird_stable2 {
+    display: flex;
+    position: absolute;
+    left: 72%;
+    bottom: 440px;
+    opacity: 0;
+    z-index: 1;
+
+    animation: stable 2s linear forwards;
+    animation-delay: 27s;
+}
+
+.bird_flying2 {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+
+    animation: flying2 2s ease-out forwards;
+    animation-delay: 27s;
+}
+
+@keyframes flying2 {
+    0%      { opacity: 0; left: 100%; bottom: 900px; }
+    1%      { opacity: 1; }
+    99%     { opacity: 1; }
+    100%    { opacity: 0; left: 72%; bottom: 440px; }
+}
+
+.bird img {
+    height: 50px;
+}
+
+@keyframes stable {
+    0%      { opacity: 0; }
+    99%     { opacity: 0; }
+    100%    { opacity: 1; }
+}
+
